@@ -1,0 +1,41 @@
+name: "Submit to Web Store"
+on:
+  workflow_dispatch:
+
+env:
+  PLASMO_PUBLIC_UMAMI_ID: ${{ vars.PLASMO_PUBLIC_UMAMI_ID }}
+  PLASMO_PUBLIC_UMAMI_URL: ${{ vars.PLASMO_PUBLIC_UMAMI_URL }}
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Cache pnpm modules
+        uses: actions/cache@v4
+        with:
+          path: ~/.pnpm-store
+          key: ${{ runner.os }}-${{ hashFiles('**/pnpm-lock.yaml') }}
+          restore-keys: |
+            ${{ runner.os }}-
+      - uses: pnpm/action-setup@v3.0.0
+        with:
+          version: latest
+          run_install: true
+      - name: Use Node.js 20.x
+        uses: actions/setup-node@v4.0.2
+        with:
+          node-version: 20.x
+          cache: "pnpm"
+      - name: Package the extension for Chrome
+        run: pnpm build --zip
+      - name: Package the extension for Firefox
+        run: pnpm build:firefox --zip
+      - name: Browser Platform Publish
+        uses: PlasmoHQ/bpp@v3
+        with:
+          keys: ${{ secrets.SUBMIT_KEYS }}
+          chrome-file: build/chrome-mv3-prod.zip
+          edge-file: build/chrome-mv3-prod.zip
+          firefox-file: build/firefox-mv3-prod.zip
+          notes: "RSSHub Radar is an open source project, you can find the source code at https://github.com/DIYgod/RSSHub-Radar"

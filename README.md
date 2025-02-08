@@ -3,96 +3,107 @@
 </p>
 <h1 align="center">RSSHub Radar</h1>
 
-> RSSHub Radar 是 [RSSHub](https://github.com/DIYgod/RSSHub) 的衍生项目，她是一个可以帮助你快速发现和订阅当前网站 RSS 和 RSSHub 的浏览器扩展
-> 万物皆可 RSS
+> Browser extension that simplifies finding and subscribing RSS and RSSHub.
+>
+> Everything is RSSible
 
-[![build status](https://img.shields.io/travis/DIYgod/RSSHub-Radar/master.svg?style=flat-square)](https://travis-ci.org/DIYgod/RSSHub-Radar)
-
-[![version](https://img.shields.io/chrome-web-store/v/kefjpfngnndepjbopdmoebkipbgkggaa.svg?style=flat-square)](https://chrome.google.com/webstore/detail/kefjpfngnndepjbopdmoebkipbgkggaa)
+[![version](https://img.shields.io/chrome-web-store/v/kefjpfngnndepjbopdmoebkipbgkggaa.svg?style=flat-square&logo=googlechrome&logoColor=fff)](https://chrome.google.com/webstore/detail/kefjpfngnndepjbopdmoebkipbgkggaa)
 [![users](https://img.shields.io/chrome-web-store/users/kefjpfngnndepjbopdmoebkipbgkggaa.svg?style=flat-square)](https://chrome.google.com/webstore/detail/kefjpfngnndepjbopdmoebkipbgkggaa)
 [![rating](https://img.shields.io/chrome-web-store/rating/kefjpfngnndepjbopdmoebkipbgkggaa.svg?style=flat-square)](https://chrome.google.com/webstore/detail/kefjpfngnndepjbopdmoebkipbgkggaa)
 
-[![Mozilla Add-on](https://img.shields.io/amo/v/rsshub-radar?style=flat-square)](https://addons.mozilla.org/zh-CN/firefox/addon/rsshub-radar/)
+[![Mozilla Add-on](https://img.shields.io/amo/v/rsshub-radar?style=flat-square&logo=firefoxbrowser&logoColor=fff)](https://addons.mozilla.org/zh-CN/firefox/addon/rsshub-radar/)
 [![Mozilla Add-on](https://img.shields.io/amo/users/rsshub-radar?color=%2344cc11&style=flat-square)](https://addons.mozilla.org/zh-CN/firefox/addon/rsshub-radar/)
 [![Mozilla Add-on](https://img.shields.io/amo/rating/rsshub-radar?style=flat-square)](https://addons.mozilla.org/zh-CN/firefox/addon/rsshub-radar/)
 
-## 介绍
+[![](https://img.shields.io/badge/dynamic/json?label=edge%20add-on&prefix=v&query=%24.version&url=https%3A%2F%2Fmicrosoftedge.microsoft.com%2Faddons%2Fgetproductdetailsbycrxid%2Fgangkeiaobmjcjokiofpkfpcobpbmnln&style=flat-square&logo=microsoftedge&logoColor=fff)](https://microsoftedge.microsoft.com/addons/detail/arxivutils/gangkeiaobmjcjokiofpkfpcobpbmnln)
+[![](https://img.shields.io/badge/dynamic/json?label=users&query=%24.activeInstallCount&url=https%3A%2F%2Fmicrosoftedge.microsoft.com%2Faddons%2Fgetproductdetailsbycrxid%2Fgangkeiaobmjcjokiofpkfpcobpbmnln&style=flat-square&color=%2344cc11)](https://microsoftedge.microsoft.com/addons/detail/arxivutils/gangkeiaobmjcjokiofpkfpcobpbmnln)
+[![](https://img.shields.io/badge/dynamic/json?label=rating&suffix=/5&query=%24.averageRating&url=https%3A%2F%2Fmicrosoftedge.microsoft.com%2Faddons%2Fgetproductdetailsbycrxid%2Fgangkeiaobmjcjokiofpkfpcobpbmnln&style=flat-square&color=%2344cc11)](https://microsoftedge.microsoft.com/addons/detail/arxivutils/gangkeiaobmjcjokiofpkfpcobpbmnln)
 
-[Telegram 群](https://t.me/rsshub) | [Telegram 频道](https://t.me/awesomeRSSHub)
+[![iTunes App Store](https://img.shields.io/itunes/v/1610744717?label=apple%20app%20store&style=flat-square&logo=appstore&logoColor=fff)](https://apps.apple.com/us/app/rsshub-radar/id1610744717)
 
-RSSHub Radar 是 [RSSHub](https://github.com/DIYgod/RSSHub) 的衍生项目，她是一个可以帮助你快速发现和订阅当前网站 RSS 和 RSSHub 的浏览器扩展
+Tested for compatibility with the following browsers (other Chromium-based browsers should also work):
 
-- 快速发现和订阅当前页面自带的 RSS
-- 快速发现和订阅当前页面支持的 RSSHub
-- 快速发现当前网站支持的 RSSHub
-- 支持一键订阅 RSS 到 Tiny Tiny RSS、Miniflux、FreshRSS、Nextcloud News、Feedly、Inoreader、Feedbin、The Old Reader、Feeds.Pub、BazQux Reader、本地阅读器
+<a href="https://chrome.google.com/webstore/detail/kefjpfngnndepjbopdmoebkipbgkggaa"><img src="https://raw.githubusercontent.com/alrra/browser-logos/main/src/chrome/chrome_128x128.png" width="48" /></a>
+<a href="https://microsoftedge.microsoft.com/addons/detail/gangkeiaobmjcjokiofpkfpcobpbmnln"><img src="https://raw.githubusercontent.com/alrra/browser-logos/main/src/edge/edge_128x128.png" width="48" /></a>
+<a href="https://addons.mozilla.org/zh-CN/firefox/addon/rsshub-radar/"><img src="https://raw.githubusercontent.com/alrra/browser-logos/main/src/firefox/firefox_128x128.png" width="48" /></a>
+<a href="https://apps.apple.com/us/app/rsshub-radar/id1610744717?l=zh&mt=12"><img src="https://raw.githubusercontent.com/alrra/browser-logos/main/src/safari/safari_128x128.png" width="48" /></a>
+<a href="https://chrome.google.com/webstore/detail/kefjpfngnndepjbopdmoebkipbgkggaa"><img src="https://i.imgur.com/ofOUkIB.png" width="48" /></a>
+<a href="https://chrome.google.com/webstore/detail/kefjpfngnndepjbopdmoebkipbgkggaa"><img src="https://i.imgur.com/9RH7UNb.png" width="48" /></a>
+<a href="https://chrome.google.com/webstore/detail/kefjpfngnndepjbopdmoebkipbgkggaa"><img src="https://raw.githubusercontent.com/alrra/browser-logos/main/src/vivaldi/vivaldi_128x128.png" width="48" /></a>
 
-![](https://i.imgur.com/K1cC5Ck.png)
+## Introduction
 
-![](https://i.imgur.com/JbLseIa.png)
+[Telegram group](https://t.me/rsshub) | [Telegram channel](https://t.me/awesomeRSSHub)
 
-## 安装
+RSSHub Radar is a spin-off project of [RSSHub](https://github.com/DIYgod/RSSHub), a browser extension that simplifies finding and subscribing RSS and RSSHub.
 
-### 商店安装
+- Discover and subscribe to the RSS feeds associated with the current page effortlessly.
+- Explore and subscribe to the RSSHub supported by the current page promptly.
+- Easily identify the RSSHubs supported by the current website quickly.
+- Supports one-click RSS subscription for various platforms including Tiny Tiny RSS, Miniflux, FreshRSS, Feedly, Inoreader, Feedbin, The Old Reader, Feeds.Pub, Local Reader...
 
-<a href="https://chrome.google.com/webstore/detail/kefjpfngnndepjbopdmoebkipbgkggaa"><img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/chrome/chrome_128x128.png" width="48" /></a>
-<a href="https://microsoftedge.microsoft.com/addons/detail/gangkeiaobmjcjokiofpkfpcobpbmnln"><img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/edge/edge_128x128.png" width="48" /></a>
-<a href="https://addons.mozilla.org/zh-CN/firefox/addon/rsshub-radar/"><img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/firefox/firefox_128x128.png" width="48" /></a>
-<a href="https://apps.apple.com/us/app/rsshub-radar/id1610744717?l=zh&mt=12"><img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/safari/safari_128x128.png" width="48" /></a>
+![image](https://github.com/DIYgod/RSSHub-Radar/assets/8266075/3474727c-fa8c-4949-bd86-afc3a471a020)
+![image](https://github.com/DIYgod/RSSHub-Radar/assets/8266075/42103b61-cb13-489a-b00b-c8c786a4cc30)
+![image](https://github.com/DIYgod/RSSHub-Radar/assets/8266075/72d7a96f-90bf-46d8-804c-0809ab71a3cf)
 
-### 手动安装
+## Install
 
-首先在 [release](https://github.com/DIYgod/RSSHub-Radar/releases) 页下载相应版本的 `radar.zip` 并解压
+### Webstore
 
-**Chrome安装扩展：**
+<a href="https://chrome.google.com/webstore/detail/kefjpfngnndepjbopdmoebkipbgkggaa"><img src="https://raw.githubusercontent.com/alrra/browser-logos/main/src/chrome/chrome_128x128.png" width="48" /></a>
+<a href="https://microsoftedge.microsoft.com/addons/detail/gangkeiaobmjcjokiofpkfpcobpbmnln"><img src="https://raw.githubusercontent.com/alrra/browser-logos/main/src/edge/edge_128x128.png" width="48" /></a>
+<a href="https://addons.mozilla.org/zh-CN/firefox/addon/rsshub-radar/"><img src="https://raw.githubusercontent.com/alrra/browser-logos/main/src/firefox/firefox_128x128.png" width="48" /></a>
+<a href="https://apps.apple.com/us/app/rsshub-radar/id1610744717?l=zh&mt=12"><img src="https://raw.githubusercontent.com/alrra/browser-logos/main/src/safari/safari_128x128.png" width="48" /></a>
 
-打开 `chrome://extensions/`
+### Manual installation
 
-打开右上角 `开发者模式`
+First download the corresponding version of `chrome-mv3-prod.zip` from the [releases](https://github.com/DIYgod/RSSHub-Radar/releases) page and unzip it
 
-点击左上角 `加载已解压的扩展程序`
+**Chrome install extension:**
 
-选择解压出的 `dist` 目录
+Open `chrome://extensions/`
 
-**Firefox安装扩展：**
+Open the upper right corner `Developer mode`
 
-打开 `about:debugging`
+Click `Load unpacked extension` in the upper left corner
 
-点击右上角 `加载临时扩展程序`
+Select the unzipped `dist` directory
 
-选择解压出的 `dist` 目录中的 `manifest.json` 文件
+**Firefox install extension:**
 
-## 参与我们
+Open `about:debugging`
 
-### 安装开发版本
+Click `Load Temporary Extension` in the upper right corner
 
-**安装依赖并构建项目：**
+Select the `manifest.json` file in the unzipped `dist` directory
+
+## Join us
+
+### Start the Development Server
+
+Also refer to: https://docs.plasmo.com/framework/workflows/dev
 
 ```
-yarn
-yarn build
+pnpm i
+pnpm dev
 ```
 
-或者使用 npm
+or use npm
 
 ```
 npm install
-npm run build
+npm run dev
 ```
 
-得到 dist 目录，安装方式参考 [手动安装](#手动安装)
+Get the `build/chrome-mv3-dev` directory, the installation method refers to [manual installation](#manual installation)
 
-### 补充 RSSHub 规则
+### Submit New RSSHub Radar Rules
 
-[见文档](https://docs.rsshub.app/joinus/quick-start.html#ti-jiao-xin-de-rsshub-gui-ze-tian-jia-jiao-ben-wen-dang)
-
-## 相关项目
-
--   [RSSHub](https://github.com/DIYgod/RSSHub)
+[See documentation](https://docs.rsshub.app/joinus/new-radar)
 
 ## Author
 
 **RSSHub Radar** © [DIYgod](https://github.com/DIYgod), Released under the [MIT](./LICENSE) License.<br>
 Authored and maintained by DIYgod with help from contributors ([list](https://github.com/DIYgod/RSSHub-radar/contributors)).
 
-> Blog [@DIYgod](https://diygod.me) · GitHub [@DIYgod](https://github.com/DIYgod) · Twitter [@DIYgod](https://twitter.com/DIYgod) · Telegram Channel [@awesomeDIYgod](https://t.me/awesomeDIYgod)
+> Blog [@DIYgod](https://diygod.cc) · GitHub [@DIYgod](https://github.com/DIYgod) · Twitter [@DIYgod](https://twitter.com/DIYgod) · Telegram Channel [@awesomeDIYgod](https://t.me/awesomeDIYgod)

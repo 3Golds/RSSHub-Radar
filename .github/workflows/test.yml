@@ -1,0 +1,45 @@
+name: test
+
+on:
+  push:
+
+env:
+  PLASMO_PUBLIC_UMAMI_ID: ${{ vars.PLASMO_PUBLIC_UMAMI_ID }}
+  PLASMO_PUBLIC_UMAMI_URL: ${{ vars.PLASMO_PUBLIC_UMAMI_URL }}
+
+jobs:
+  build:
+    runs-on: macos-latest
+    name: Build assets
+    steps:
+      - uses: actions/checkout@v4
+      - name: Cache pnpm modules
+        uses: actions/cache@v4
+        with:
+          path: ~/.pnpm-store
+          key: ${{ runner.os }}-${{ hashFiles('**/pnpm-lock.yaml') }}
+          restore-keys: |
+            ${{ runner.os }}-
+      - uses: pnpm/action-setup@v3.0.0
+        with:
+          version: latest
+          run_install: true
+      - name: Use Node.js 20.x
+        uses: actions/setup-node@v4.0.2
+        with:
+          node-version: 20.x
+          cache: "pnpm"
+      - name: Package the extension for Chrome
+        run: pnpm build --zip
+      - name: Package the extension for Firefox
+        run: pnpm build:firefox --zip
+      - name: Package the extension for Safari
+        run: pnpm build:safari:zip
+      - name: Archive production artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: build
+          path: |
+            build/safari-mv3-prod.zip
+            build/chrome-mv3-prod.zip
+            build/firefox-mv3-prod.zip
